@@ -11,10 +11,10 @@ module.exports = async () => {
       username: "Admin",
       email: "admin7252@gmail.com",
       password: "admin7252",
-      role: 'admin'
+      role: "admin",
     });
     await user.save();
-    return console.log('Admin Created.');
+    return console.log("Admin Created.");
   }
-  return console.log('Admin already created successfully');
+  return console.log("Admin already created successfully");
 };

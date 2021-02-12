@@ -6,6 +6,7 @@ module.exports = async(req, res) => {
         if(!result) {
             return res.status(404).send({text: "Unable to find."});
         }
+        
         res.status(200).send(result);
     } catch (error) {
         res.sendStatus(500);
